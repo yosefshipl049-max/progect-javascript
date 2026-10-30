@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Store</title>
+
+    <link rel="stylesheet" href="icons/css/all.min.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="site-header">
+
+    <div id="top-bar">
+        <div id="top-inner">
+            <div id="contact-info">
+                <span><i class="fa-regular fa-envelope"></i> info@webmail.com</span>
+                <span><i class="fa-solid fa-location-dot"></i> 15/A, Nest Tower, NYC</span>
+            </div>
+
+            <div id="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <nav id="navbar">
+        <a href="#" id="logo">
+            <img src="image/logo.png" alt="Logo">
+        </a>
+
+        <button id="menu-button" type="button" aria-label="Open menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div id="navbar-content">
+            <ul id="nav-links">
+                <li>
+                    <a href="#" id="home-link">Home</a>
+                    <div>
+                        <p>All Home Pages</p>
+                        <ul>
+                            <li><a href="#">Home V.1</a></li>
+                            <li><a href="#">Home V.2</a></li>
+                            <li><a href="#">Home V.3</a></li>
+                            <li><a href="#">Home V.4</a></li>
+                            <li><a href="#">Home V.5</a></li>
+                            <li><a href="#">Home V.6</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#">Shop</a>
+                    <div>
+                        <p>Shop Pages</p>
+                        <ul>
+                            <li><a href="#">Shop Sidebar</a></li>
+                            <li><a href="#">Shop List</a></li>
+                            <li><a href="#">Shop List 3</a></li>
+                            <li><a href="#">Shop List 4</a></li>
+                            <li><a href="#">Shop List 5</a></li>
+                            <li><a href="#">Shop List 6</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#">Blog</a>
+                    <div>
+                        <p>Blog Pages</p>
+                        <ul>
+                            <li><a href="#">Blog Grid</a></li>
+                            <li><a href="#">Blog List</a></li>
+                            <li><a href="#">Blog Details</a></li>
+                            <li><a href="#">Blog Sidebar</a></li>
+                            <li><a href="#">Blog Standard</a></li>
+                            <li><a href="#">Blog Masonry</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li><a href="#">Portfolio</a></li>
+
+                <li>
+                    <a href="#">Pages</a>
+                    <div id="pages-dropdown">
+                        <section>
+                            <p>All Home Pages</p>
+                            <ul>
+                                <li><a href="#">Home V.1</a></li>
+                                <li><a href="#">Home V.2</a></li>
+                                <li><a href="#">Home V.3</a></li>
+                                <li><a href="#">Home V.4</a></li>
+                                <li><a href="#">Home V.5</a></li>
+                                <li><a href="#">Home V.6</a></li>
+                            </ul>
+                        </section>
+
+                        <section>
+                            <p>Other Pages</p>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">My Account</a></li>
+                                <li><a href="#" id="wishlist-page-link">Wishlist</a></li>
+                                <li><a href="#" id="cart-page-link">Cart</a></li>
+                                <li><a href="#">Checkout</a></li>
+                            </ul>
+                        </section>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#">Contacts</a>
+                    <div>
+                        <p>Contact Pages</p>
+                        <ul>
+                            <li><a href="#">Contact Style 1</a></li>
+                            <li><a href="#">Contact Style 2</a></li>
+                            <li><a href="#">Contact Style 3</a></li>
+                            <li><a href="#">Contact Style 4</a></li>
+                            <li><a href="#">Contact Style 5</a></li>
+                            <li><a href="#">Contact Style 6</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+
+            <div id="nav-actions">
+
+                <form id="search-box">
+                    <input id="nav-search-input" type="search"
+                           placeholder="Search Your Product...">
+                    <button type="submit" aria-label="Search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+
+                <a href="#" id="account-link" aria-label="Account">
+                    <i class="fa-regular fa-user"></i>
+                </a>
+
+                <a href="#" id="wishlist-link" class="count-link" aria-label="Wishlist">
+                    <i class="fa-regular fa-heart"></i>
+                    <span id="wishlist-count">0</span>
+                </a>
+
+                <a href="#" id="cart-link" class="count-link" aria-label="Shopping bag">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span id="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero">
+
+        <div id="organic-label">
+            <img src="image/shape2.png" alt="">
+            <p>100% Organic Foods</p>
+        </div>
+
+        <h1 class="h1">
+            Organic <span>Veggies & Foods</span>
+            You Cook
+
+            <b class="healthy">
+                <span>H</span><span>e</span><span>a</span>
+                <span>l</span><span>t</span><span>h</span><span>y</span>
+            </b>
+        </h1>
+
+        <form id="hero-search">
+            <input id="hero-search-input" type="search" placeholder="Search product">
+
+            <div class="category-select">
+                <button type="button" id="btn">
+                    <span id="selected-category">Select a category</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+
+                <article class="con">
+                    <h3>Choose your foods</h3>
+                    <p data-category="all">All Categories</p>
+                    <p data-category="vegetables">Vegetables</p>
+                    <p data-category="fruits">Fruits</p>
+                    <p data-category="bread">Bread</p>
+                    <p data-category="meat">Meat</p>
+                </article>
+            </div>
+        </form>
+
+        <div class="hero-images">
+            <img src="image/banner3.png" alt="">
+            <img src="image/banner4.png" alt="">
+        </div>
+    </section>
+</header>
+
+<section class="Categories">
+    <div class="data">
+        <div>
+            <b><span></span><span></span><span></span><p>FRESH FROM OUR FARM</p></b>
+            <p>Popular Categories</p>
+        </div>
+    </div>
+
+    <div class="slider"></div>
+
+    <div class="vegtables">
+        <div class="card">
+            <div>
+                <img src="image/sale1.png" alt="">
+                <article>
+                    <p>100% <b>Pure</b></p>
+                    <h2>Natural Vegetables</h2>
+                    <a href="#products-section">Fresh Vegetables sale 30% Off</a>
+                </article>
+                <div class="btn">
+                    <button type="button"><i class="fa-solid fa-arrow-left"></i></button>
+                    <button type="button"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div>
+                <img src="image/sale2.png" alt="">
+                <article>
+                    <p>100% <b>Pure</b></p>
+                    <h2>Natural Vegetables</h2>
+                    <a href="#products-section">Fresh Vegetables sale 30% Off</a>
+                </article>
+            </div>
+        </div>
+
+        <div class="card">
+            <div>
+                <img src="image/sale3.png" alt="">
+                <article>
+                    <p>100% <b>Pure</b></p>
+                    <h2>Natural Vegetables</h2>
+                    <a href="#products-section">Fresh Vegetables sale 30% Off</a>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="Products" id="products-section">
+    <div class="data">
+        <div>
+            <b><span></span><span></span><span></span><p>FRESH FROM OUR FARM</p></b>
+            <p>Our Organic Products</p>
+        </div>
+
+        <article id="product-filters">
+            <button type="button" class="active" data-filter="all">All</button>
+            <button type="button" data-filter="vegetables">Vegetables</button>
+            <button type="button" data-filter="fruits">Fruits</button>
+            <button type="button" data-filter="bread">Bread</button>
+            <button type="button" data-filter="meat">Meat</button>
+        </article>
+    </div>
+
+    <div class="search-results-info" id="search-results-info"></div>
+    <div class="container"></div>
+</section>
+
+<section class="GetEvery">
+    <div class="container">
+        <div class="card">
+            <div class="data1">
+                <img src="image/deals1.png" alt="">
+                <div>
+                    <h2>Get Every Vegetable <br>You Need</h2>
+                    <a href="#products-section">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="data1">
+                <img src="image/deals2.png" alt="">
+                <div>
+                    <span>FRESH FROM OUR FARM</span>
+                    <h2>Get Every 30% <br>Vegetable You Need</h2>
+                    <a href="#products-section">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="data1">
+                <img src="image/deals3.png" alt="">
+                <div>
+                    <h2>First Deal Vegetable <br>You Need</h2>
+                    <a href="#products-section">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="Fresh">
+    <article>
+        <div class="left">
+            <div class="produce">
+                <div class="data">
+                    <div>
+                        <b>
+                            <span></span><span></span><span></span>
+                            <p>FRESH FROM OUR FARM</p>
+                        </b>
+                        <p>Fresh produce Categories</p>
+                        <span>Discover our fresh products and explore the available categories.</span>
+                    </div>
+                </div>
+
+                <div class="card" id="fresh-categories"></div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="container" id="fresh-products"></div>
+        </div>
+    </article>
+</section>
+
+<!-- Cart Overlay -->
+<div class="overlay" id="cart-overlay"></div>
+
+<aside class="side-panel" id="cart-panel">
+    <div class="panel-header">
+        <h2><i class="fa-solid fa-bag-shopping"></i> Shopping Cart</h2>
+        <button type="button" class="close-panel" data-close="cart-panel">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+
+    <div class="panel-body" id="cart-items"></div>
+
+    <div class="panel-footer">
+        <div class="cart-total">
+            <span>Total:</span>
+            <strong id="cart-total">$0.00</strong>
+        </div>
+        <button type="button" id="clear-cart">Clear Cart</button>
+        <button type="button" class="checkout-button">Proceed to Checkout</button>
+    </div>
+</aside>
+
+<!-- Wishlist Overlay -->
+<div class="overlay" id="wishlist-overlay"></div>
+
+<aside class="side-panel" id="wishlist-panel">
+    <div class="panel-header">
+        <h2><i class="fa-regular fa-heart"></i> My Wishlist</h2>
+        <button type="button" class="close-panel" data-close="wishlist-panel">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+
+    <div class="panel-body" id="wishlist-items"></div>
+</aside>
+
+<!-- Product Details Modal -->
+<div class="modal-overlay" id="product-modal">
+    <div class="product-modal-content">
+        <button type="button" class="modal-close" id="modal-close">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div id="modal-product-content"></div>
+    </div>
+</div>
+
+<!-- Toast Message -->
+<div id="toast">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toast-message"></span>
+</div>
+
+<script src="jQuery.js"></script>
+<script src="slick/slick.min.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
