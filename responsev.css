@@ -1,9 +1,18 @@
 
-/* RESPONSIVE */
+/* =====================================
+   RESPONSIVE DESIGN
+===================================== */
 
+/* LARGE LAPTOPS */
 @media (max-width: 1200px) {
+
     #navbar {
         padding: 15px 4%;
+        gap: 15px;
+    }
+
+    #navbar-content {
+        gap: 15px;
     }
 
     #nav-links {
@@ -14,41 +23,85 @@
         width: 180px;
     }
 
+    #nav-actions {
+        gap: 12px;
+    }
+
+    #hero h1 {
+        font-size: 52px;
+    }
+
+    .Categories .vegtables {
+        padding: 0 5%;
+    }
+
+    .Categories .vegtables .card {
+        height: 420px;
+    }
+
     .Products .container {
+        padding: 0 5%;
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .Fresh article .right {
-        padding: 35px 20px;
+    .Fresh {
+        padding: 70px 4%;
     }
 
-    .Fresh article .right .container {
-        gap: 25px 15px;
+    .Fresh article .right {
+        padding: 40px 25px;
     }
 
     .Fresh .right .container .data2 {
-        width: 100px;
-        height: 100px;
+        width: 95px;
+        height: 95px;
+    }
+
+    .Fresh .right .container {
+        gap: 25px 15px;
     }
 }
 
+
+/* TABLETS AND SMALL LAPTOPS */
 @media (max-width: 992px) {
+
+    #site-header {
+        min-height: auto;
+    }
+
+    #top-inner {
+        padding: 10px 4%;
+    }
+
     #navbar {
+        padding: 15px 4%;
+        min-height: 80px;
         flex-wrap: wrap;
+    }
+
+    #logo img {
+        width: 125px;
     }
 
     #menu-button {
         display: block;
-        margin-left: auto;
+        order: 3;
     }
 
     #navbar-content {
         display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 20px 4%;
+        background: white;
+        box-shadow: 0 10px 20px #00000015;
         flex-direction: column;
         align-items: stretch;
-        width: 100%;
-        flex-basis: 100%;
-        padding: 20px 0;
+        gap: 20px;
+        z-index: 1000;
     }
 
     #navbar-content.active {
@@ -56,32 +109,68 @@
     }
 
     #nav-links {
+        width: 100%;
         flex-direction: column;
         align-items: stretch;
         gap: 0;
+    }
+
+    #nav-links > li {
         width: 100%;
+        border-bottom: 1px solid #eee;
     }
 
     #nav-links > li > a {
-        padding: 12px 5px;
+        padding: 14px 5px;
     }
 
     #nav-links > li > div {
+        position: static;
         display: none;
+        width: 100%;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        background: #f8f8f8;
+    }
+
+    #nav-links > li:hover > div {
+        display: block;
+    }
+
+    #nav-links > li > #pages-dropdown {
+        width: 100%;
+        flex-wrap: wrap;
     }
 
     #nav-actions {
+        width: 100%;
         justify-content: center;
         flex-wrap: wrap;
     }
 
     #search-box {
         width: 100%;
+        max-width: 350px;
     }
 
-    #hero h1,
+    #hero {
+        min-height: 480px;
+        padding: 80px 5% 50px;
+    }
+
+    #hero h1 {
+        font-size: 45px;
+    }
+
     #hero h1 .healthy {
-        font-size: 48px;
+        font-size: 45px;
+    }
+
+    .hero-images img:first-child,
+    .hero-images img:last-child {
+        max-width: 23%;
     }
 
     .Categories .vegtables {
@@ -92,106 +181,126 @@
         height: 400px;
     }
 
+    .Categories .vegtables .card:last-child {
+        grid-column: 1 / -1;
+    }
+
     .Products .container {
         grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .GetEvery .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .GetEvery .card:last-child {
+        grid-column: 1 / -1;
     }
 
     .Fresh article {
         grid-template-columns: 1fr;
     }
 
-    .Fresh article .left,
-    .Fresh article .right {
-        border-radius: 15px;
+    .Fresh article .left {
+        border-radius: 12px 12px 0 0;
     }
 
     .Fresh article .right {
-        margin-top: 20px;
+        border-radius: 0 0 20px 20px;
     }
 
     .Fresh .produce .card {
         grid-template-columns: repeat(2, 1fr);
     }
-
-    .GetEvery .container {
-        grid-template-columns: repeat(2, 1fr);
-    }
 }
 
-@media (max-width: 650px) {
+
+/* MOBILE TABLETS */
+@media (max-width: 768px) {
+
     #top-inner {
         justify-content: center;
-        padding: 10px 4%;
+        text-align: center;
     }
 
-    #contact-info {
+    #contact-info,
+    #social-icons {
         justify-content: center;
-        gap: 10px;
-    }
-
-    #navbar {
-        padding: 15px 5%;
-    }
-
-    #logo img {
-        width: 120px;
     }
 
     #hero {
-        min-height: 480px;
-        padding: 75px 5% 40px;
+        min-height: 430px;
+        padding: 70px 5% 40px;
     }
 
-    #hero h1,
+    #hero h1 {
+        font-size: 38px;
+    }
+
     #hero h1 .healthy {
-        font-size: 36px;
+        font-size: 38px;
+    }
+
+    #organic-label {
+        padding: 10px 20px;
     }
 
     #hero-search {
-        flex-direction: column;
-        border-radius: 15px;
-        overflow: visible;
-    }
-
-    #hero-search > input {
-        border-radius: 15px;
-    }
-
-    #hero-search .category-select > button {
         width: 100%;
-        min-height: 48px;
-        border-radius: 0 0 15px 15px;
     }
 
-    .con {
-        width: 100%;
-        right: 0;
+    .hero-images img:first-child,
+    .hero-images img:last-child {
+        display: none;
     }
 
-    .hero-images img {
-        opacity: .4;
+    .data {
+        padding: 20px 5%;
     }
 
     .data div > p {
-        font-size: 28px;
+        font-size: 32px;
         text-align: center;
     }
 
     .Categories {
-        padding: 55px 0;
+        padding: 60px 0;
+        gap: 30px;
     }
 
-    .Categories .vegtables {
-        grid-template-columns: 1fr;
+    .Categories .slider {
         padding: 0 5%;
     }
 
+    .Categories .vegtables {
+        padding: 0 5%;
+        gap: 15px;
+    }
+
     .Categories .vegtables .card {
-        height: 350px;
+        height: 330px;
+    }
+
+    .Categories .vegtables .card article {
+        margin-left: 15px;
+    }
+
+    .Categories .vegtables .card article p {
+        font-size: 19px;
+    }
+
+    .Categories .vegtables .card article h2 {
+        font-size: 23px;
+    }
+
+    .Products {
+        gap: 25px;
     }
 
     .Products .data {
         flex-direction: column;
+        align-items: center;
         gap: 20px;
     }
 
@@ -203,28 +312,231 @@
         justify-content: center;
     }
 
+    .Products .container {
+        padding: 0 4%;
+        gap: 15px;
+    }
+
+    .Products .container .card {
+        min-height: 430px;
+        padding: 20px 12px 12px;
+    }
+
+    .Products .container .card .content {
+        min-height: 390px;
+    }
+
+    .Products .container .card .content > img {
+        height: 260px;
+    }
+
+    .down-card {
+        margin-top: 260px;
+    }
+
+    .down-card h3 {
+        font-size: 17px;
+    }
+
+    .GetEvery {
+        padding: 30px 4%;
+    }
+
+    .GetEvery .container {
+        gap: 15px;
+    }
+
+    .GetEvery .card .data1 div {
+        left: 15px;
+        gap: 8px;
+    }
+
+    .GetEvery .card .data1 div h2 {
+        font-size: 22px;
+    }
+
+    .Fresh {
+        padding: 50px 4%;
+    }
+
+    .Fresh article .right {
+        padding: 30px 20px;
+    }
+
+    .Fresh .right .container .card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .Fresh .right .container .content {
+        align-items: center;
+    }
+
+    .modal-product {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .product-modal-content {
+        padding: 25px;
+    }
+}
+
+
+/* MOBILE PHONES */
+@media (max-width: 576px) {
+
+    #top-inner {
+        padding: 12px 3%;
+    }
+
+    #contact-info {
+        gap: 10px;
+        font-size: 11px;
+    }
+
+    #social-icons {
+        gap: 15px;
+    }
+
+    #navbar {
+        padding: 12px 4%;
+        min-height: 70px;
+    }
+
+    #logo img {
+        width: 110px;
+    }
+
+    #menu-button {
+        font-size: 19px;
+        padding: 7px 10px;
+    }
+
+    #hero {
+        min-height: 390px;
+        padding: 55px 4% 35px;
+    }
+
+    #hero h1 {
+        font-size: 29px;
+        line-height: 1.5;
+        margin-bottom: 25px;
+    }
+
+    #hero h1 .healthy {
+        font-size: 29px;
+    }
+
+    #organic-label p {
+        font-size: 12px;
+    }
+
+    #hero-search {
+        flex-direction: column;
+        border-radius: 15px;
+        overflow: visible;
+        gap: 0;
+    }
+
+    #hero-search > input {
+        padding: 15px;
+        border-radius: 15px 15px 0 0;
+    }
+
+    #hero-search .category-select > button {
+        width: 100%;
+        min-height: 48px;
+        border-radius: 0 0 15px 15px;
+    }
+
+    .con {
+        width: 100%;
+        top: calc(100% + 5px);
+    }
+
+    .data div > p {
+        font-size: 27px;
+    }
+
+    .Categories {
+        padding: 45px 0;
+    }
+
+    .Categories .vegtables {
+        grid-template-columns: 1fr;
+    }
+
+    .Categories .vegtables .card,
+    .Categories .vegtables .card:last-child {
+        height: 350px;
+        grid-column: auto;
+    }
+
+    .Products .data div > p {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .Products article {
+        padding: 0 4%;
+        gap: 8px;
+    }
+
     .Products article button {
-        padding: 8px 12px;
-        font-size: 13px;
+        padding: 9px 12px;
+        font-size: 12px;
     }
 
     .Products .container {
-        padding: 0 5%;
         grid-template-columns: 1fr;
+        padding: 0 7%;
         gap: 20px;
     }
 
     .Products .container .card {
-        max-width: 400px;
-        margin: auto;
+        min-height: 460px;
+        padding: 25px 20px 15px;
+    }
+
+    .Products .container .card .content {
+        min-height: 420px;
+    }
+
+    .Products .container .card .content > img {
+        height: 290px;
+    }
+
+    .down-card {
+        margin-top: 290px;
+    }
+
+    .down-card h3 {
+        font-size: 20px;
+    }
+
+    .hover-icons {
+        top: 130px;
     }
 
     .GetEvery .container {
         grid-template-columns: 1fr;
     }
 
+    .GetEvery .card:last-child {
+        grid-column: auto;
+    }
+
     .Fresh {
-        padding: 50px 5%;
+        padding: 40px 4%;
+    }
+
+    .Fresh article .left {
+        padding: 18px;
+    }
+
+    .Fresh .produce .data > div > p {
+        font-size: 24px;
     }
 
     .Fresh .produce .card {
@@ -237,10 +549,22 @@
 
     .Fresh article .right .container {
         grid-template-columns: 1fr;
+        gap: 25px;
     }
 
     .Fresh .right .container .card {
+        flex-direction: row;
+        text-align: left;
         justify-content: flex-start;
+    }
+
+    .Fresh .right .container .content {
+        align-items: flex-start;
+    }
+
+    .Fresh .right .container .data2 {
+        width: 90px;
+        height: 90px;
     }
 
     .side-panel {
@@ -249,12 +573,7 @@
     }
 
     .product-modal-content {
-        padding: 50px 20px 25px;
-    }
-
-    .modal-product {
-        grid-template-columns: 1fr;
-        gap: 15px;
+        padding: 20px 15px;
     }
 
     .modal-product img {
@@ -262,27 +581,61 @@
     }
 
     .modal-product h2 {
-        font-size: 22px;
+        font-size: 21px;
+    }
+
+    #back-to-top {
+        width: 42px;
+        height: 42px;
+        right: 15px;
+        bottom: 15px;
+    }
+
+    #toast {
+        min-width: 0;
+        width: 90%;
     }
 }
 
+
+/* SMALL MOBILE PHONES */
 @media (max-width: 380px) {
-    #hero h1,
+
+    #hero h1 {
+        font-size: 25px;
+    }
+
     #hero h1 .healthy {
-        font-size: 30px;
+        font-size: 25px;
     }
 
-    .Products article {
-        gap: 6px;
+    #logo img {
+        width: 95px;
     }
 
-    .Products article button {
-        padding: 7px 9px;
-        font-size: 12px;
+    #nav-actions {
+        gap: 15px;
+    }
+
+    .Categories .vegtables .card {
+        height: 300px;
+    }
+
+    .Products .container {
+        padding: 0 4%;
+    }
+
+    .Products .container .card {
+        padding: 20px 12px;
     }
 
     .Fresh .right .container .data2 {
-        width: 85px;
-        height: 85px;
+        width: 75px;
+        height: 75px;
+    }
+
+    .Fresh .right .container .content h3 {
+        font-size: 15px;
     }
 }
+
